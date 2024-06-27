@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para la cabecera */
+.header {
+    background-color: #004c9e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.company-info {
+    margin-top: 10px;
+}
+
+.company-info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.company-info p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* Estilos para el formulario y la lista de sitios */
+.input-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container button#addButton {
+    padding: 10px 20px;
+    background-color: #00881d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.input-container button#addButton:hover {
+    background-color: #0056b3;
+}
+
+.sites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.site {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.site:hover {
+    transform: translateY(-5px);
+}
+
+.site a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.site button {
+    padding: 8px 16px;
+    width: calc(50% - 8px);
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .input-container input {
+        width: calc(100% - 12px);
+    }
+
+    .input-container button#addButton,
+    .input-container button#addButton.cancelButton {
+        width: 100%;
+    }
+
+    .site button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+

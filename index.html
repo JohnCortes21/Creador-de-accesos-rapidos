@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos y otros enlaces -->
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toli Motos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-lEx1I4pHcsxK7XeDvdYb3WwgxEh2aK7pwS72ekUfU0Fx7NsmDLHzKyy5Mtk5M3k3R0VQgHtzMBuQYl4Q95Ncjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/toli.png" alt="Logo de la empresa">
+        </div>
+        <div class="company-info">
+            <h1>Tolimotos</h1>
+            <p>Venta y compra de motos.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="input-container">
+            <div class="input-icon">
+                <i class="fas fa-link"></i> <!-- Icono para el campo de URL -->
+                <input type="text" id="siteName" placeholder="Nombre del sitio">
+            </div>
+            <div class="input-icon">
+                <i class="fas fa-globe"></i> <!-- Icono para el campo de nombre -->
+                <input type="text" id="siteURL" placeholder="URL del sitio">
+            </div>
+            <button id="addButton" onclick="addSite()">Agregar</button>
+        </div>
+        <div id="sitesList" class="sites-list"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
